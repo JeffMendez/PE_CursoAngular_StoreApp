@@ -4,9 +4,10 @@
     </a>
     <div class="flex flex-col space-y-2 p-4">
         <!-- PIPES | -->
-        <!-- Son como tuberias que transforman la informacion de entrada -->
-        <h3 class="text-sm text-gray-700">{{ product.title | uppercase }}</h3>
+        <!-- Son como tuberias que transforman la informacion de entrada, se pueden apilar -->
+        <h3 class="text-sm text-gray-700">{{ product.title | uppercase | reverse }}</h3>
         <p class="text-lg font-medium text-gray-900">{{product.price | currency:'Q' }}</p>
+        <!-- <p>{{product.price | date }}</p> -->
         <button class="text-black bg-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 w-full"
             (click)="addToCartHandler()">Add to cart</button>
     </div>
