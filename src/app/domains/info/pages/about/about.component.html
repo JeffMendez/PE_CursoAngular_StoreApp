@@ -1,0 +1,23 @@
+<div class="max-w-4xl mx-auto px-6 py-10 space-y-12">
+    <!-- About Section -->
+    <div class="space-y-4">
+      <h1 class="text-4xl font-bold text-gray-800">About</h1>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus doloremque maxime veniam autem, modi eligendi laudantium hic, blanditiis laborum provident laboriosam, ipsa minus odio reprehenderit qui architecto? Animi, consequatur impedit!
+      </p>
+    </div>
+  
+    <!-- Clientes Section -->
+    <div class="space-y-4">
+      <h2 class="text-2xl font-semibold text-gray-700">Num. Clientes:</h2>
+      <div *ngIf="duration() > 0">
+        <app-counter [message]="message()" [duration]="duration()"></app-counter>
+      </div>
+    </div>
+  
+    <!-- Audio Section -->
+    <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+      <app-wave-audio audioUrl="assets/audio/music-epic.mp3"></app-wave-audio>
+    </div>
+  </div>
+  
